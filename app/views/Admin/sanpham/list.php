@@ -44,7 +44,26 @@
                 <th>Size</th>
                 <th>Mô tả</th>
             </tr>
-            <tr>
+            <?php
+              foreach ($listsp as $sanpham) {
+                extract($sanpham);
+                $editsp = "indexadmin.php?act=editsp&id=".$id;
+                $delsp = "indexadmin.php?act=delsp&id=".$id;
+                echo '<tr>
+                <td>'.$id.'</td>
+                <td>'.$ten_san_pham.'</td>
+                <td>'.$gia.'</td>
+                <td>'.$size.'</td>
+                <td>'.$mo_ta.'</td>
+                <td>
+                  <a href="'.$editsp.'"><input type="button" value="Sửa"></a>
+                  <a href="'.$delsp.'"><input type="button" value="Xóa"></a>
+                </td>
+            </tr>';
+              }
+            
+            ?>
+            <!-- <tr>
                 <td><input type="checkbox" name="" id=""></td>
                 <td></td>
                 <td></td>
@@ -55,18 +74,12 @@
                   <a href=""><input type="button" value="Sửa"></a>
                   <a href=""><input type="button" value="Xóa"></a>
                 </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
+            </tr> -->
         </table>
     </div>
     <br>
     <div class="content">
-      <a href="indexadmin.php?act=adddm"><input type="button" value="Thêm mới"></a>
+      <a href="indexadmin.php?act=addsp"><input type="button" value="Thêm mới"></a>
     </div>
       <div class="content-wrapper row mb-2 col-sm-6">
         

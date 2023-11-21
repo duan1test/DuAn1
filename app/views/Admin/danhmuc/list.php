@@ -41,10 +41,36 @@
                 <th>Mã danh mục</th>
                 <th>Tên danh mục</th>
                 <th>Mô tả danh mục</th>
+                <th>Hình ảnh</th>
                 <th>Trạng thái danh mục</th>
             </tr>
-            <tr>
-                <td><input type="checkbox" name="" id=""></td>
+            <?php
+              foreach ($listdm as $danhmuc) {
+                extract($danhmuc);
+                $editdm = "indexadmin.php?act=editdm&id=".$id;
+                $deldm = "indexadmin.php?act=deldm&id=".$id;
+                $img_path = "uploads/".$img;
+                if(is_file($img_path)){
+                    $img = "<img src='".$img_path."' height='80'>";
+                }else{
+                    $img = "no photo";
+                }
+                echo '<tr>
+                <td>'.$id.'</td>
+                <td>'.$ten_danh_muc.'</td>
+                <td>'.$mo_ta.'</td>
+                <td>'.$img.'</td>
+                <td>'.$trang_thai.'</td>
+                <td>
+                  <a href="'.$editdm.'"><input type="button" value="Sửa"></a>
+                  <a href="'.$deldm.'"><input type="button" value="Xóa"></a>
+                </td>
+            </tr>';
+              }
+            
+            ?>
+            <!-- <tr>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -53,7 +79,7 @@
                   <a href=""><input type="button" value="Sửa"></a>
                   <a href=""><input type="button" value="Xóa"></a>
                 </td>
-            </tr>
+            </tr> -->
         </table>
     </div>
     <br>

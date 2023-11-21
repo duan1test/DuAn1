@@ -36,7 +36,7 @@
 
       <!-- Main content -->
       <div class="content"><!--/. container-fluid -->
-      <form action="">
+      <form action="indexadmin.php?act=adddm" method="post" enctype="multipart/form-data">
         <div class="content">
           <label for="">Mã danh mục:</label><br>
           <input type="text" name="id" disabled>
@@ -51,7 +51,7 @@
         </div>
         <div class="content">
           <label for="">Hình ảnh danh mục:</label><br>
-          <input type="file" name="hinh_anh">
+          <input type="file" name="img">
         </div>
         <div class="content">
           <label for="">Trạng thái danh mục:</label><br>
@@ -62,6 +62,9 @@
           <input type="submit" name="themmoi" value="Thêm mới">
           <a href="indexadmin.php?act=listdm"><input type="button" name="danhsach" value="Danh sách"></a>
         </div>
+        <?php
+            if(isset($thongbao)&&($thongbao!="")) echo $thongbao;
+        ?>
       </form>
     </div>
       <div class="content-wrapper row mb-2 col-sm-6">

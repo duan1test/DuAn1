@@ -53016,8 +53016,9 @@ a.text-muted:hover {
   border: 1px black solid;
 }
 .table_danhmuc table th{
-  width: 22%;
+  width: 20%;
   padding: 20px;
+  padding-left: 60px;
 }
 .table_danhmuc table td{
   border: 1px solid black;
