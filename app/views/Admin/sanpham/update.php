@@ -7,9 +7,9 @@
   <div class="wrapper">
 
     <!-- Preloader -->
-    <div class="preloader flex-column justify-content-center align-items-center">
+    <!-- <div class="preloader flex-column justify-content-center align-items-center">
       <img class="animation__wobble" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
-    </div>
+    </div> -->
 
     <!-- Navbar -->
     <?php  include "menungang/menungang.php"; ?>
@@ -44,14 +44,20 @@
       <select name="id_danh_muc">
         <!-- <option value="0" selected>Tất cả</option> -->
         <?php
+        
             foreach ($listdm as $danhmuc) {
-                // extract($danhmuc);
                 if($id_danh_muc==$danhmuc['id']){
                     echo '<option value="'.$danhmuc['id'].'" selected>'.$danhmuc['ten_danh_muc'].'</option>';
                 }else{
                     echo '<option value="'.$danhmuc['id'].'" >'.$danhmuc['ten_danh_muc'].'</option>';
                 }
             }   
+        ?>
+        <?php
+            // foreach ($listdm as $danhmuc) {
+            //     extract($danhmuc);
+            //     echo '<option value="'.$id.'">'.$ten_danh_muc.'</option>';
+            // }
         ?>
     </select>
       <form action="indexadmin.php?act=updatesp" method="post">

@@ -87,7 +87,9 @@
                 include "sanpham/list.php";
                 break;
             case "editsp":
+                $listdm = loadall_danhmuc();
                 if(isset($_GET['id'])&&($_GET['id']>0)){
+                    
                     $sp = loadone_sanpham($_GET['id']);
                 }
                 include "sanpham/update.php";
