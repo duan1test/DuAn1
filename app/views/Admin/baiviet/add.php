@@ -7,11 +7,11 @@
     </div>
 
     <!-- Navbar -->
-    <?php  include "menungang/menungang.php"; ?>
+    <?php include "menungang/menungang.php"; ?>
     <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
-    <?php  include "menudoc/menudoc.php"; ?>
+    <?php include "menudoc/menudoc.php"; ?>
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
@@ -31,41 +31,41 @@
           </div><!-- /.row -->
         </div><!-- /.container-fluid -->
       </div>
-      
+
       <!-- /.content-header -->
 
       <!-- Main content -->
       <div class="content"><!--/. container-fluid -->
-      <form action="">
-        <div class="content">
-          <label for="">Mã danh mục:</label><br>
-          <input type="text" name="id" disabled>
-        </div>
-        <div class="content">
-          <label for="">Tên danh mục:</label><br>
-          <input type="text" name="ten_danh_muc">
-        </div>
-        <div class="content">
-          <label for="">Mô tả danh mục:</label><br>
-          <input type="text" name="mo_ta">
-        </div>
-        <div class="content">
-          <label for="">Hình ảnh danh mục:</label><br>
-          <input type="file" name="hinh_anh">
-        </div>
-        <div class="content">
-          <label for="">Trạng thái danh mục:</label><br>
-          <input type="text" name="trang_thai">
-        </div>
-        <br>
-        <div class="content">
-          <input type="submit" name="themmoi" value="Thêm mới">
-          <a href="indexadmin.php?act=listdm"><input type="button" name="danhsach" value="Danh sách"></a>
-        </div>
-      </form>
-    </div>
+        <form action="indexadmin.php?act=addbv" method="POST">
+          <div class="content">
+            <label for="">Mã bài viết:</label><br>
+            <input type="text" name="id" disabled>
+          </div>
+          <div class="content">
+            <label for="">Tiêu đề:</label><br>
+            <input type="text" name="tieu_de">
+          </div>
+          <div class="content">
+            <label for="">Nội dung:</label><br>
+            <input type="text" name="noi_dung">
+          </div>
+          <div class="content">
+            <label for="">Ngày đăng:</label><br>
+            <input type="date" name="ngay_dang">
+          </div>
+          <div class="content">
+            <label for="">Trạng thái bài viết:</label><br>
+            <input type="text" name="trang_thai">
+          </div>
+          <br>
+          <div class="content">
+            <input type="submit" name="themmoi" value="Thêm mới">
+            <a href="indexadmin.php?act=listbv"><input type="button" name="danhsach" value="Danh sách"></a>
+          </div>
+        </form>
+      </div>
       <div class="content-wrapper row mb-2 col-sm-6">
-        
+
       </div>
       <!-- /.content -->
     </div>
@@ -73,7 +73,7 @@
 
     <!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-dark">
-      
+
       <!-- Control sidebar content goes here -->
     </aside>
     <!-- /.control-sidebar -->

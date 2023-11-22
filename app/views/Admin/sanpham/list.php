@@ -41,18 +41,26 @@
                 <th>Mã sản phẩm</th>
                 <th>Tên sản phẩm</th>
                 <th>Giá</th>
+                <th>Hình ảnh</th>
                 <th>Size</th>
                 <th>Mô tả</th>
             </tr>
             <?php
               foreach ($listsp as $sanpham) {
                 extract($sanpham);
+                $img_path = "uploads/".$img;
+                if(is_file($img_path)){
+                    $img = "<img src='".$img_path."' height='80'>";
+                }else{
+                    $img = "no photo";
+                }
                 $editsp = "indexadmin.php?act=editsp&id=".$id;
                 $delsp = "indexadmin.php?act=delsp&id=".$id;
                 echo '<tr>
                 <td>'.$id.'</td>
                 <td>'.$ten_san_pham.'</td>
                 <td>'.$gia.'</td>
+                <td>'.$img.'</td>
                 <td>'.$size.'</td>
                 <td>'.$mo_ta.'</td>
                 <td>

@@ -1,127 +1,90 @@
-<!--Start Footer area -->
-<div class="footer-area">
-        <!--start footer top area -->
-        <div class="footer-top-area section-padding">
-            <div class="container">
+<!-- Footer Start -->
+<div class="container-fluid bg-secondary text-dark mt-5 pt-5">
+        <div class="row px-xl-5 pt-5">
+            <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+                <a href="" class="text-decoration-none">
+                    <h1 class="mb-4 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border border-white px-3 mr-1">E</span>Shopper</h1>
+                </a>
+                <p>Dolore erat dolor sit lorem vero amet. Sed sit lorem magna, ipsum no sit erat lorem et magna ipsum dolore amet erat.</p>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>123 Street, New York, USA</p>
+                <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>info@example.com</p>
+                <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+012 345 67890</p>
+            </div>
+            <div class="col-lg-8 col-md-12">
                 <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-12">
-                        <div class="widget-area">
-                            <h4 class="widget-title">Contact info</h4>
-                            <div class="ad-marker">
-                                <i class="fa fa-map-marker"></i>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold text-dark mb-4">Quick Links</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-dark mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                            <a class="text-dark mb-2" href="shop.html"><i class="fa fa-angle-right mr-2"></i>Our Shop</a>
+                            <a class="text-dark mb-2" href="detail.html"><i class="fa fa-angle-right mr-2"></i>Shop Detail</a>
+                            <a class="text-dark mb-2" href="cart.html"><i class="fa fa-angle-right mr-2"></i>Shopping Cart</a>
+                            <a class="text-dark mb-2" href="checkout.html"><i class="fa fa-angle-right mr-2"></i>Checkout</a>
+                            <a class="text-dark" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold text-dark mb-4">Quick Links</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-dark mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                            <a class="text-dark mb-2" href="shop.html"><i class="fa fa-angle-right mr-2"></i>Our Shop</a>
+                            <a class="text-dark mb-2" href="detail.html"><i class="fa fa-angle-right mr-2"></i>Shop Detail</a>
+                            <a class="text-dark mb-2" href="cart.html"><i class="fa fa-angle-right mr-2"></i>Shopping Cart</a>
+                            <a class="text-dark mb-2" href="checkout.html"><i class="fa fa-angle-right mr-2"></i>Checkout</a>
+                            <a class="text-dark" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold text-dark mb-4">Newsletter</h5>
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" class="form-control border-0 py-4" placeholder="Your Name" required="required" />
                             </div>
-                            <p>8901 Marmora Road, Glasgow D04 89 GR, New York</p>
-                            <div class="ad-marker">
-                                <i class="fa fa-phone"></i>
+                            <div class="form-group">
+                                <input type="email" class="form-control border-0 py-4" placeholder="Your Email"
+                                    required="required" />
                             </div>
-                            <p>Telephones: <a href="tel:+0123456789">+0123456789</a>
-                            </p>
-                            <div class="ad-marker">
-                                <i class="fa fa-envelope-o"></i>
+                            <div>
+                                <button class="btn btn-primary btn-block border-0 py-3" type="submit">Subscribe Now</button>
                             </div>
-                            <p> Email: <a href="mailto:demo@example.com ">demo@example.com </a></p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-6 col-12">
-                        <div class="widget-area widget-menu">
-                            <h4 class="widget-title">MY ACCOUNT</h4>
-                            <ul>
-                                <li><a href="#">My Account</a></li>
-                                <li><a href="#">Login</a></li>
-                                <li><a href="#">My Cart</a></li>
-                                <li><a href="#">Wishlist</a></li>
-                                <li><a href="#">Checkout</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-6 col-12">
-                        <div class="widget-area widget-menu">
-                            <h4 class="widget-title">OUR SERVICE</h4>
-                            <ul>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Discount</a></li>
-                                <li><a href="#">Site map</a></li>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Custom service</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-6 col-12">
-                        <div class="widget-area widget-menu">
-                            <h4 class="widget-title">Support</h4>
-                            <ul>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Deliveru information</a></li>
-                                <li><a href="#">Privacy policy</a></li>
-                                <li><a href="#">Terms & conditions</a></li>
-                                <li><a href="#">Support 24/7</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-12 col-12">
-                        <div class="widget-area widget-area-tags">
-                            <h4 class="widget-title">popular tags</h4>
-                            <a class="c-tags" href="#">Clothing</a>
-                            <a class="c-tags" href="#">T-shirt</a>
-                            <a class="c-tags" href="#">Men’s</a>
-                            <a class="c-tags" href="#">Facon</a>
-                            <a class="c-tags" href="#">Fashion</a>
-                            <a class="c-tags" href="#">shop online</a>
-                            <a class="c-tags" href="#">carry bag</a>
-                            <a class="c-tags" href="#">Shoes for Men</a>
-                            <a class="c-tags" href="#">Women’s</a>
-                            <a class="c-tags" href="#">sale</a>
-                            <a class="c-tags" href="#">trend for Men’s</a>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- end footer bottom area -->
-        <!-- start bottom area -->
-        <div class="footer-bottom-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-12">
-                        <div class="copy-right-text">
-                            <p class="copyright">&copy; 2021 <strong>Facon</strong> Made with <i class="fa fa-heart text-danger" aria-hidden="true"></i> by <a href="https://hasthemes.com/"><strong>HasThemes</strong></a>.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-12">
-                        <div class="r-cards">
-                            <a href="#"><img src="img/cards/discover.png" alt="discover"></a>
-                            <a href="#"><img src="img/cards/express.png" alt="discover"></a>
-                            <a href="#"><img src="img/cards/master-card.png" alt="discover"></a>
-                            <a href="#"><img src="img/cards/paypal.png" alt="discover"></a>
-                            <a href="#"><img src="img/cards/visa.png" alt="discover"></a>
-                        </div>
-                    </div>
-                </div>
+        <div class="row border-top border-light mx-xl-5 py-4">
+            <div class="col-md-6 px-xl-0">
+                <p class="mb-md-0 text-center text-md-left text-dark">
+                    &copy; <a class="text-dark font-weight-semi-bold" href="#">Your Site Name</a>. All Rights Reserved. Designed
+                    by
+                    <a class="text-dark font-weight-semi-bold" href="https://htmlcodex.com">HTML Codex</a><br>
+                    Distributed By <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                </p>
+            </div>
+            <div class="col-md-6 px-xl-0 text-center text-md-right">
+                <img class="img-fluid" src="../views/Client/img/payments.png" alt="">
             </div>
         </div>
-        <!-- End footer bottom area -->
     </div>
-    <!--End Footer area -->
+    <!-- Footer End -->
 
-    <!-- Latest Jquery -->
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <!-- Bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- owl-carousel js -->
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- jquery-ui js -->
-    <script src="js/jquery-ui.min.js"></script>
-    <!-- Mobile menu js -->
-    <script src="js/jquery.meanmenu.js"></script>
-    <!-- Scroll Up js -->
-    <script src="js/jquery.scrollUp.js"></script>
-    <!-- Slick js -->
-    <script src="js/slick.min.js"></script>
-   
-    <!-- Main js -->
-    <script src="js/main.js"></script>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="../views/Client/lib/easing/easing.min.js"></script>
+    <script src="../views/Client/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="../views/Client/mail/jqBootstrapValidation.min.js"></script>
+    <script src="../views/Client/mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../views/Client/js/main.js"></script>
 </body>
 
-
-<!-- Mirrored from htmldemo.net/facon/facon/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Nov 2023 01:41:44 GMT -->
 </html>

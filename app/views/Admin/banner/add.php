@@ -36,31 +36,27 @@
 
       <!-- Main content -->
       <div class="content"><!--/. container-fluid -->
-      <form action="">
+      <form action="indexadmin.php?act=addbanner" method="post" enctype="multipart/form-data">
         <div class="content">
-          <label for="">Mã danh mục:</label><br>
-          <input type="text" name="id" disabled>
+          <label for="">Tên banner:</label><br>
+          <input type="text" name="ten_banner">
         </div>
         <div class="content">
-          <label for="">Tên danh mục:</label><br>
-          <input type="text" name="ten_danh_muc">
-        </div>
-        <div class="content">
-          <label for="">Mô tả danh mục:</label><br>
-          <input type="text" name="mo_ta">
-        </div>
-        <div class="content">
-          <label for="">Hình ảnh danh mục:</label><br>
+          <label for="">Hình ảnh:</label><br>
           <input type="file" name="hinh_anh">
         </div>
         <div class="content">
-          <label for="">Trạng thái danh mục:</label><br>
+          <label for="">Link:</label><br>
+          <input type="text" name="link">
+        </div>
+        <div class="content">
+          <label for="">Trạng thái:</label><br>
           <input type="text" name="trang_thai">
         </div>
         <br>
         <div class="content">
           <input type="submit" name="themmoi" value="Thêm mới">
-          <a href="indexadmin.php?act=listdm"><input type="button" name="danhsach" value="Danh sách"></a>
+          <a href="indexadmin.php?act=listbanner"><input type="button" name="danhsach" value="Danh sách"></a>
         </div>
       </form>
     </div>

@@ -36,31 +36,26 @@
 
       <!-- Main content -->
       <div class="content"><!--/. container-fluid -->
-      <form action="">
+      <form action="indexadmin.php?act=addbl" method="post" enctype="multipart/form-date">
         <div class="content">
-          <label for="">Mã danh mục:</label><br>
-          <input type="text" name="id" disabled>
+          <label for="">Mã bình luận:</label><br>
+          <input type="text" name="id_bl" disabled>
         </div>
         <div class="content">
-          <label for="">Tên danh mục:</label><br>
-          <input type="text" name="ten_danh_muc">
+          <label for="">Nội dung bình luận:</label><br>
+          <input type="text" name="noi_dung_bl">
         </div>
         <div class="content">
-          <label for="">Mô tả danh mục:</label><br>
-          <input type="text" name="mo_ta">
+          <label for="">Trạng thái bình luận:</label><br>
+          <input type="text" name="trang_thai_bl">
         </div>
+      <div class="content">
+          <label for="">Ngày bình luận :</label><br>
+          <input type="date" name="ngay_bl" id="">
+      </div><br>
         <div class="content">
-          <label for="">Hình ảnh danh mục:</label><br>
-          <input type="file" name="hinh_anh">
-        </div>
-        <div class="content">
-          <label for="">Trạng thái danh mục:</label><br>
-          <input type="text" name="trang_thai">
-        </div>
-        <br>
-        <div class="content">
-          <input type="submit" name="themmoi" value="Thêm mới">
-          <a href="indexadmin.php?act=listdm"><input type="button" name="danhsach" value="Danh sách"></a>
+          <input type="submit" name="themmoi_bl" value="Thêm mới">
+          <a href="indexadmin.php?act=listbl"><input type="button" name="danhsach_bl" value="Danh sách"></a>
         </div>
       </form>
     </div>
@@ -76,4 +71,5 @@
       
       <!-- Control sidebar content goes here -->
     </aside>
-    <!-- /.control-sidebar -->
+    <!-- Control Sidebar -->
+    

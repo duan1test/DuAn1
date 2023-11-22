@@ -11,7 +11,7 @@
     <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
-    <?php  // include "menudoc/menudoc.php"; ?>
+    <?php  include "menudoc/menudoc.php"; ?>
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">

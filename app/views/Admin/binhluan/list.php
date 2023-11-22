@@ -38,23 +38,23 @@
       <div class="content table_danhmuc"><!--/. container-fluid -->
         <table>
             <tr>
-                <th>Mã danh mục</th>
-                <th>Tên danh mục</th>
-                <th>Mô tả danh mục</th>
-                <th>Trạng thái danh mục</th>
+                <th>Mã bình luận</th>
+                <th>Nội dung bình luận</th>
+                <th>Ngày bình luận</th>
+                <th>Tùy chọn</th>
             </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
+            
+            <?php foreach ($listbl as $bl) {
+              extract($bl);
+            echo "<tr>
+                <td>".$id."</td>
+                <td>".$noi_dung."</td>
+                <td>".$ngay_bl."</td>
+                <td>
+                  <a href='indexadmin.php?act=editbl&id=".$id."'><input type='button' value='Sửa'></a>
+                  <a href='indexadmin.php?act=delbl&id=".$id."'><input type='button' value='Xóa'><a/></td></tr>"; }
+
+          ?>
         </table>
     </div>
       <div class="content-wrapper row mb-2 col-sm-6">

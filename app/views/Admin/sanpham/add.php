@@ -44,7 +44,7 @@
             }
         ?>
     </select>
-      <form action="indexadmin.php?act=addsp" method="post">
+      <form action="indexadmin.php?act=addsp" method="post" enctype="multipart/form-data">
         <div class="content">
           <label for="">Tên sản phẩm:</label><br>
           <input type="text" name="ten_san_pham">
@@ -52,6 +52,10 @@
         <div class="content">
           <label for="">Giá:</label><br>
           <input type="text" name="gia">
+        </div>
+        <div class="content">
+          <label for="">Hình ảnh:</label><br>
+          <input type="file" name="img">
         </div>
         <div class="content">
           <label for="">Size:</label><br>

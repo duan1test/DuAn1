@@ -39,23 +39,41 @@
         <table>
             <tr>
                 <th>Mã danh mục</th>
-                <th>Tên danh mục</th>
-                <th>Mô tả danh mục</th>
-                <th>Trạng thái danh mục</th>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
+                <th>Tên banner</th>
+                <th>Hình ảnh</th>
+                <th>Link</th>
+                <th>Trạng thái</th>
+          </tr>
+          <?php
+            foreach ($listbanner as $banner) {
+              extract($banner);
+              $img_path = "uploads/".$hinh_anh;
+                if(is_file($img_path)){
+                    $hinh_anh = "<img src='".$img_path."' height='80'>";
+                }else{
+                    $hinh_anh = "no photo";
+                }
+                $editbanner = "indexadmin.php?act=editbanner&id=".$id;
+                $delbanner = "indexadmin.php?act=delbanner&id=".$id;
+                echo '<tr>
+                <td>'.$id.'</td>
+                <td>'.$ten_banner.'</td>
+                <td>'.$hinh_anh.'</td>
+                <td>'.$link.'</td>
+                <td>'.$trang_thai.'</td>
+                <td>
+                  <a href="'.$editbanner.'"><input type="button" value="Sửa"></a>
+                  <a href="'.$delbanner.'"><input type="button" value="Xóa"></a>
+                </td>
+            </tr>';
+            }
+          
+          ?>
+          </table>
+    </div>
+    <br>
+    <div class="content">
+      <a href="indexadmin.php?act=addbanner"><input type="button" value="Thêm mới"></a>
     </div>
       <div class="content-wrapper row mb-2 col-sm-6">
         

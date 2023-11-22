@@ -20,12 +20,12 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1 class="m-0">Trang quản trị</h1>
+              <h1 class="m-0">Quản lý khách hàng</h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active">Trang quản trị</li>
+                <li class="breadcrumb-item active">Quản lý khách hàng</li>
               </ol>
             </div><!-- /.col -->
           </div><!-- /.row -->
@@ -36,26 +36,38 @@
 
       <!-- Main content -->
       <div class="content table_danhmuc"><!--/. container-fluid -->
-        <table>
+      <table>
             <tr>
-                <th>Mã danh mục</th>
-                <th>Tên danh mục</th>
-                <th>Mô tả danh mục</th>
-                <th>Trạng thái danh mục</th>
+                <th>ID</th>
+                <th>Tên nhân viên</th>
+                <th>Email</th>
+                <th>SĐT</th>
+                <th>Địa chỉ</th>
+                <th>Tài khoản</th>
+                <th>Mật khẩu</th>
+                <th>Mô tả</th>
             </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
+            <?php 
+                foreach ($listkh as $tkkh) { 
+                extract($tkkh);
+                $suakh = "indexadmin.php?act=suakh&id=$id";
+                $delkh   = "indexadmin.php?act=delkh&id=$id";
+              ?>
+                <tr>
+                    <td><?= $id ?></td>
+                    <td><?= $ten ?></td>
+                    <td><?= $email ?></td>
+                    <td><?= $sdt ?></td>
+                    <td><?= $dia_chi ?></td>
+                    <td><?= $account ?></td>
+                    <td><?= $pass ?></td>
+                    <td><?= $mo_ta ?></td>
+                    <td><a href="<?= $suakh ?>"><input type="button" value="Sửa"></a>   <a href="<?= $delkh ?>"><input type="button" value="Xóa"></a></td>
+                </tr>
+            <?php  } ?>
         </table>
+        <a href="indexadmin.php?act=addkh"><input type="submit" value="Thêm mới"></a>
+
     </div>
       <div class="content-wrapper row mb-2 col-sm-6">
         
