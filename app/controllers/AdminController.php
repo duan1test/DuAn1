@@ -1,73 +1,43 @@
 <?php
-    include "../models/pdo.php";
-    include "../models/AdminModel.php";
-    include "../views/Admin/header/header.php";
-    if(isset($_GET['act'])){
-        $act = $_GET['act'];
-        switch($act){
-            //controller danh mục
-            case "adddm":
-                if(isset($_POST['themmoi'])&&($_POST['themmoi'])){
-                    $id = $_POST['id'];
-                    $ten_danh_muc = $_POST['ten_danh_muc'];
-                    $mo_ta = $_POST['mo_ta'];
-                    $trang_thai = $_POST['trang_thai'];
-                    $img = $_FILES['img']['name'];
-                    $target_dir = "uploads/";
-                    $target_file = $target_dir . basename($_FILES["img"]["name"]);
-                    if (move_uploaded_file($_FILES["img"]["tmp_name"], $target_file)) {
-                        //echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
-                      } else {
-                        //echo "Sorry, there was an error uploading your file.";
-                      }
-                      insert_danhmuc($ten_danh_muc,$mo_ta,$img,$trang_thai);
-                    $thongbao = "Thêm thành công";
+    include '../models/pdo.php';
+    include '../models/AdminModel.php';
+    include '../views/Admin/header/header.php';
+    include '../views/Admin/sidebar/sidebar-horizontal.php';
+    include '../views/Admin/sidebar/sidebar-vertical.php';
+    
+    if(isset($_GET['action'])){
+        $action = $_GET['action'];
+        switch ($action) {
+            case 'list-student':
+                $students = getListStudent();
+                include '../views/Admin/pages/students/list-student.php';
+                break;
+            case 'create-student':
+                if(isset($_POST['create_student'])&&($_POST['create_student'])){
+                    $code = $_POST['code'];
+                    $name = $_POST['name'];
+                    $role_name = $_POST['role_name'];
+                    $class = $_POST['class'];
+                    $email = $_POST['email'];
+                    $phone = $_POST['phone'];
+                    $dateStart = $_POST['dateStart'];
+                    $password = $_POST['password'];
+                    $specialized = $_POST['specialized'];
+                    $role = $_POST['role'];
+                    $active = $_POST['active'];
+                    createStudent($code,$name,$role_name,$class,$email,$phone,$dateStart,$password,$specialized,$active);
+                    // insert_danhmuc($ten_danh_muc,$mo_ta,$img,$trang_thai);
+
                 }
-                include "../views/Admin/danhmuc/add.php";
+                include '../views/Admin/pages/students/create-student.php';
                 break;
-            case "listdm":
-                $listdm = loadall_danhmuc();
-                include "../views/Admin/danhmuc/list.php";
-                break;
-            case "deldm":
-                if(isset($_GET['id'])&&($_GET['id']>0)){
-                    delete_danhmuc($_GET['id']);
-                }
-                $listdm = loadall_danhmuc();
-                include "../views/Admin/danhmuc/list.php";
-                break;
-            case "editdm":
-                
-
-            //controller sản phẩm
-            case "listsp":
-                include "sanpham/list.php";
-                break;
-
-
-            //controller banner
-
-
-
-
-            //controller user
-
-
-
-
-            //controller khách hàng
-
-            //controller bình luận
-
-
-
-            //controller bài viết
-            default: include "../views/Admin/home/home.php";
+            default:
+                include '../views/Admin/home/home.php';
                 break;
         }
     }else{
-        include "../views/Admin/home/home.php";
+        include '../views/Admin/home/home.php';
     }
-    include "../views/Admin/footer/footer.php";
+    include '../views/Admin/footer/footer.php';
 
 ?>
