@@ -1,0 +1,107 @@
+.page-title {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.page-description {
+    font-size: 16px;
+}
+
+.table-filter {
+
+    .dropdown-menu .dropdown-item{
+        padding: 15px;
+    }
+
+    button.dropdown-toggle {
+        border: 1px solid #ccc;
+    }
+
+    button.dropdown-toggle:hover {
+        color: unset;
+    }
+
+    button.dropdown-toggle:focus,
+    input:focus {
+        box-shadow: 0 0 0 .25rem rgba(211, 212, 213, .5);
+        border: 1px solid #ccc;
+    }
+
+    button.dropdown-toggle:active {
+        background-color: unset;
+    }
+
+    button.btn-menu {
+        border-top-right-radius: 5px !important;
+        border-bottom-right-radius: 5px !important;
+    }
+}
+
+.widget {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.table-container {
+    .table>:not(:first-child) {
+        border-top: unset;
+    }
+
+    tr:has(td) {
+        cursor: pointer;
+    }
+    th {
+        padding: 15px 10px;
+    }
+
+    td {
+        padding: 20px 10px;
+
+        .img-row {
+            height: 40px;
+            width: auto;
+            margin-right: 5px;
+            display: inline-block;
+            img {
+                border-radius: 3px;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                border: 1px solid #ccc;
+            }
+        }
+    }
+
+}
+
+.badge-success {
+    background-color: #5bef7b;
+    color: white;
+}
+
+.input-container {
+    margin: 20px 15px;
+    margin-bottom: 0;
+
+    .form-label {
+        font-weight: 500;
+        color: rgba(var(--bs-secondary-rgb), 1) !important;;
+    }
+
+    .drop-zone {
+        border: 2px dashed #ccc;
+        border-radius: 10px;
+    }
+
+    .file-name {
+        margin: auto;
+        p {
+            width: fit-content;
+            border-radius: 10px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+    }
+}
